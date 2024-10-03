@@ -3,13 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vragenlijst</title>
-    <link rel="stylesheet" href="../css/form.css">
+    <title>Web-Essentials</title>
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <img src="">
+            <div class="logo">Web-Essentials</div>
+            <nav>
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="vragenlijst.php">Find your genre!</a></li>
+                    <li><a href="https://store.steampowered.com"></a></li>
+                </ul>
+            </nav>
+            <div class="contact-info">
+                Phone: +123-456-7890 | Email: support@steam.com
+            </div>
         </div>
     </header>
 
