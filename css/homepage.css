@@ -7,6 +7,7 @@
 .tools {
     padding: 40px 0;
     text-align: center;
+    color: #f4f4f4;
 }
 
 .tools h2 {
@@ -32,6 +33,7 @@
 .benefits {
     background: #f4f4f4;
     padding: 40px 0;
+    color: black;
 }
 
 .benefits h2 {
