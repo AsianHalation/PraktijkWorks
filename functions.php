@@ -45,6 +45,7 @@
         function result($scores) {
             //functie om de hoogste score uit te halen
             $max_genre = array_keys($scores, max($scores));
+            return $max_genre;
         }
         
         //Array van de scores
@@ -58,11 +59,12 @@
             'Platform' => $platform
         ];
         
-        //haalde genre eruit met de hoogste score
+        //haal genre eruit met de hoogste score
         $highest_genres = result($genre_scores);
         
         //print functie met hoogste score
-        echo "The genre(s) with the highest score: " . implode(", ", $highest_genres) . "<br>";
+        //implode om array elementen in een enkele string te zetten
+        echo "Gefeliciteerd! je bent verslaafd aan: " . implode(", ", $highest_genres) . "<br>";
         
         //print de volledige uitkomst met de andere genres
         foreach ($genre_scores as $genre => $score) {
