@@ -42,13 +42,12 @@
         $adventure += score($_POST['vraag14']);
         $sandbox += score($_POST['vraag15']);
 
-    
         function result($scores) {
-            //genre met de hoogste score
+            //functie om de hoogste score uit te halen
             $max_genre = array_keys($scores, max($scores));
         }
         
-        //array met de scores om te printen
+        //Array van de scores
         $genre_scores = [
             'RTS' => $rts,
             'Adventure' => $adventure,
@@ -59,13 +58,13 @@
             'Platform' => $platform
         ];
         
-        //scores bij genres toevoegen
+        //haalde genre eruit met de hoogste score
         $highest_genres = result($genre_scores);
         
-        //laat de genres zien
+        //print functie met hoogste score
         echo "The genre(s) with the highest score: " . implode(", ", $highest_genres) . "<br>";
         
-        //laat alle scores zien
+        //print de volledige uitkomst met de andere genres
         foreach ($genre_scores as $genre => $score) {
             echo $genre . ": " . $score . "<br>";
         }
