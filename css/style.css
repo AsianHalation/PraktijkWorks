@@ -121,3 +121,30 @@ footer .newsletter form button {
 footer .contact-info {
     text-align: center;
 }
+form
+{
+    
+    position: relative;
+    display: inline;
+    display: flex;
+    flex-direction: column;
+    left: 30vw;
+    top: 12vh;
+    
+    
+}
+
+main 
+{display: flex;
+    align-items: center;
+    position: relative;
+  top: -31vh;
+    
+}
+#steam
+{
+    left: 0vw;
+    width: 9vw;
+    position: relative;
+    top: -27vh;
+}
