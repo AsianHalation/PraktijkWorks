@@ -14,7 +14,7 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="homepage.php">Home</a></li>
                     <li><a href="vragenlijst.php">Find your genre!</a></li>
                     <li><a href="https://store.steampowered.com">Steam</a></li>
                 </ul>
@@ -26,9 +26,7 @@
     </header>
 
     <section class="banner">
-        <div class="container">
             <img src="img/miku.jpg">
-        </div>
     </section>
 
     <section class="tools">
