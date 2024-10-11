@@ -128,7 +128,7 @@ form
     display: inline;
     display: flex;
     flex-direction: column;
-    left: 30vw;
+    left: 27vw;
     top: 12vh;
     
     
@@ -148,3 +148,16 @@ main
     position: relative;
     top: -27vh;
 }
+label
+{
+    border: solid ;
+}
+.vragen
+{
+    display: flex;
+    flex-direction: column;
+    position:relative ;
+    right: 27vw;
+}
+
+
