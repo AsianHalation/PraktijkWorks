@@ -61,13 +61,4 @@
         
         //haal genre eruit met de hoogste score
         $highest_genres = result($genre_scores);
-        
-        //print functie met hoogste score
-        //implode om array elementen in een enkele string te zetten
-        echo "Gefeliciteerd! je bent verslaafd aan: " . implode(", ", $highest_genres) . "<br>";
-        
-        //print de volledige uitkomst met de andere genres
-        foreach ($genre_scores as $genre => $score) {
-            echo $genre . ": " . $score . "<br>";
-        }
     }

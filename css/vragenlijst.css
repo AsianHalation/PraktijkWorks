@@ -1,0 +1,49 @@
+ /* Main styling for the form sections */
+main {
+    display: flex;
+    align-items: center;
+}
+
+
+form {
+    width: 75%;
+}
+
+.form-section {
+    background-color: #2a475e;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    text-align: left;
+}
+/* Styling for the section header */
+.form-section h2 {
+    color: #1a1a2e;
+    margin-bottom: 10px;
+}
+/* Label and input styling */
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+.radio-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 5px;
+}
+.radio-group input[type="radio"] {
+    margin-right: 5px;
+}
+/* Center submit button */
+.submit-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #1a1a2e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

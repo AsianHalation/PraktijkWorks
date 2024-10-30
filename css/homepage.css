@@ -1,3 +1,8 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
 
 .banner {
     display: flex;
@@ -86,3 +91,25 @@
     object-fit: cover;
 }
 
+
+main 
+{display: flex;
+    align-items: center;
+    position: relative;
+    top: -31vh;  
+}
+#steam
+{
+    left: 0vw;
+    width: 9vw;
+    position: relative;
+    top: -27vh;
+}
+
+.vragen
+{
+    display: flex;
+    flex-direction: column;
+    position:relative ;
+    right: 27vw;
+}
