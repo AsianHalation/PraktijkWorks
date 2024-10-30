@@ -31,8 +31,6 @@
     <main>
     <form method="post">
         <legend>Genre Vragenlijst</legend>
-        
-        <!-- Section 1 -->
         <div class="form-section">
             <label for="vraag1">Hou je van strategisch denken en plannen tijdens het spelen?</label>
             <div class="radio-group">
@@ -70,7 +68,6 @@
             </div>
         </div>
 
-        <!-- Section 2 -->
         <div class="form-section">
             <label for="vraag6">Vind je het leuk om voertuigen te besturen in games, zoals auto's of racewagens?</label>
             <div class="radio-group">
@@ -108,7 +105,6 @@
             </div>
         </div>
 
-        <!-- Section 3 -->
         <div class="form-section">
             <label for="vraag11">Heb je een voorkeur voor games waarin je je eigen werelden kunt creëren of veranderen?</label>
             <div class="radio-group">
@@ -148,11 +144,12 @@
 
         <input type="submit" value="Inleveren" class="submit-btn">
     </form>    
-    
-    
+</main>
+
     <?php if ($_SERVER["REQUEST_METHOD"] == "POST") : ?>
         <div>
             <h2>Result</h2>
+    <!--implode om array elementen in een string te zetten -->
             <p>Gefeliciteerd! Je bent verslaafd aan: <?= implode(", ", $highest_genres) ?></p>
             <h3>All Genre Scores:</h3>
             <?php foreach ($genre_scores as $genre => $score) : ?>
@@ -160,9 +157,6 @@
             <?php endforeach; ?>
         </div>
     <?php endif; ?>
-</main>
-
-
 
 
     <footer>
@@ -173,25 +167,11 @@
                 <p><strong>Company Vision:</strong> We strive for the best offers</p>
                 <p><strong>Team Introduction:</strong> Gabe Newell CEO of Steam and Dota 2 overlord</p>
             </div>
-            <div class="footer-links">
-                <ul>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                    <li><a href="#">Help Center</a></li>
-                </ul>
-            </div>
-            <div class="social-media">
-                <a href="#">Facebook</a>
-                <a href="#">Twitter</a>
-                <a href="#">LinkedIn</a>
-                <a href="#">Instagram</a>
-            </div>
+
             <div class="newsletter">
-                <h2>Subscribe to Our Newsletter</h2>
-                <form>
-                    <input type="email" placeholder="Enter your email">
-                    <button type="submit">Subscribe</button>
-                </form>
+                <?php
+                    echo date("Y/m/d") . " " . date("h:i:s");
+                ?>
             </div>
             <div class="contact-info">
                 Address: 123 Productivity Lane, Tech City, TX 12345 | Phone: +123-456-7890 | Email: support@Web-Essentials.com
