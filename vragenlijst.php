@@ -168,7 +168,7 @@
                 <p><strong>Team Introduction:</strong> Gabe Newell CEO of Steam and Dota 2 overlord</p>
             </div>
 
-            <div class="newsletter">
+            <div class="tijd">
                 <?php
                     echo date("Y/m/d") . " " . date("h:i:s");
                 ?>
